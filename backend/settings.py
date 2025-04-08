@@ -98,6 +98,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Configure CORS for allowed origins (for frontend)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Next.js frontend local dev
+    "https://kimaru.netlify.app", 
     "https://kelvinkimaru.onrender.com",  # Add your live domain here
 ]
 
