@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ecard_o8k8',
+        'USER': 'ecard_o8k8_user',
+        'PASSWORD': 'QQhfGp92X9f8iPlpE5gx7bdQ7CwFyxFD',
+        'HOST': 'dpg-cvqpm68gjchc739649n0-a.oregon-postgres.render.com',  # Use external database URL here
+        'PORT': '5432',
     }
 }
 
