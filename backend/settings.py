@@ -60,7 +60,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL')
+        default=os.environ.get('DATABASE_URL','postgresql://ecard_o8k8_user:QQhfGp92X9f8iPlpE5gx7bdQ7CwFyxFD@dpg-cvqpm68gjchc739649n0-a.oregon-postgres.render.com/ecard_o8k8' )
     )
 }
 
