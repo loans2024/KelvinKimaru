@@ -95,10 +95,11 @@ STATIC_URL = 'static/'
 # Add this if you're collecting static files during deploy
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# Configure CORS for allowed origins (for frontend)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Next.js frontend local dev
+    "https://kelvinkimaru.onrender.com",  # Add your live domain here
 ]
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
